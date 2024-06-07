@@ -5,6 +5,6 @@ public class AffirmationSimple implements Affirmation {
 
     @Override
     public String evaluer() {
-        return null;
+        return CaluclRatiocinateur.analyser(text);
     }
 }
