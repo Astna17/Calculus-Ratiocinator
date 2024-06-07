@@ -1,14 +1,13 @@
 package com.calculus.ratiocinator.Affirmation;
-
-import java.util.Map;
-
 public class CaluclRatiocinateur {
-    private static final Map<String, Boolean> veriteDeBase = Map.of(
-            "Lou est beau", true,
-            "Lou est pauvre", false,
-            "Lou est généreux", null
-    );
-    public static Boolean obtenirValeurVerite(String affirmation) {
-        return veriteDeBase.get(affirmation);
+    public static String analyser(String affirmation) {
+        if (affirmation.equals("Lou est beau")){
+            return "Vrai";
+        } else if (affirmation.equals("Lou est pauvre")) {
+            return "Faux";
+        } else if (affirmation.equals("Lou est généreux")) {
+            return "jenesaispas";
+        }
+        else return "jenesaispas";
     }
 }
