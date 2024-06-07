@@ -1,10 +1,14 @@
 package com.calculus.ratiocinator.Affirmation;
 
 public class AffirmationSimple implements Affirmation {
-    private String text;
+    private String affirmation;
+    private Boolean valeur;
 
     @Override
-    public String evaluer() {
-        return CaluclRatiocinateur.analyser(text);
+    public Boolean evaluer() {
+        return valeur;
+    }
+    public String getAffirmation(){
+        return CaluclRatiocinateur.analyser(affirmation);
     }
 }
